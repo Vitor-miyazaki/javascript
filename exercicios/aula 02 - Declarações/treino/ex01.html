@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janelas</title>
+</head>
+<style>
+    body{
+        font: normal 18pt arial; 
+    }
+</style>
+<body>
+    
+    
+    <script>
+        window.confirm('Página de teste')
+        var nome = window.prompt('Qual é o seu nome?')
+        window.alert('Prazer em te conhecer '+ nome + '!')
+        document.write(`Seja muito bem-vindo(a) em minha página <strong>${nome}</strong>!<br>`)
+        document.write(`O seu nome com letras miúsculas fica dessa forma: <strong>${nome.toUpperCase()}</strong><br>`)
+        document.write(`Já em minúsculas fica assim: <strong>${nome.toLowerCase()}</strong><br>`)
+        document.write(`E possui ${nome.length} caracteres.`)
+    </script>
+</body>
+</html>
