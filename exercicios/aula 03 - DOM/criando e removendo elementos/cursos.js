@@ -1,5 +1,5 @@
 const caixa = document.querySelector('#left')
-const cursos = ['HTML', 'CSS', 'PHP', 'React', 'MySql','olá','tudo bem','a'] 
+const cursos = ['HTML', 'CSS', 'PHP', 'React', 'MySql','olá','tudo bem'] 
 
 
 cursos.map((valor,indice)=>{
@@ -8,6 +8,8 @@ cursos.map((valor,indice)=>{
     novoElemento.setAttribute('class', 'cursos')
     novoElemento.setAttribute('id',`c${indice + 1}`)
     caixa.appendChild(novoElemento)
+
+    novoElemento.addEventListener
     
 })
 
@@ -16,10 +18,7 @@ const botao = document.createElement('input')
     botao.setAttribute('value','Remover')
     caixa.appendChild(botao)
 
-/* 
-const novoElemento = document.createElement('div')
 
-*/
 
 
 /* 
