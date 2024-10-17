@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    
+}
+
+section{
+    background-color: rgb(186, 186, 186);
+    width: 30vw;
+    padding: 1rem 1rem;
+    border: 3px solid black   
+}
+
+#cxExterna{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 5px;
+    padding: .5rem .5rem;
+    margin-bottom: 2vh;
+
+}
+
+#cxForm{
+    color: white;
+    height: 3vh;
+    margin: 0px;
+    padding: 5px 5px;
+}
+
+input{
+    margin-right: .5rem;
+    padding: 0px;
+    cursor: pointer;
+}
+
+label{
+    cursor: pointer;
+   
+    
+}
+
+label:hover{
+    color: yellow;
+    font-size: 1.1em;
+}
+
+.material-symbols-outlined{
+    color: yellow;
+    margin: auto;
+    padding: 3px 3px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover{
+    color: red;
+    
+}
+
