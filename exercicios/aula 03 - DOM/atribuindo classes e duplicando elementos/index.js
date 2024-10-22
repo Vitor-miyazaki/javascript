@@ -10,8 +10,11 @@
 
 const todosElementos = [...document.querySelectorAll('div.cursos')]
 const btnCopiar = document.querySelector('.copiar')
+const btnVoltar = document.querySelector('.voltar')
 const right = document.querySelector('.right')
-//console.log(btnCopiar)
+const left = document.querySelector('.left')
+//const txtVazio = document.getElementsByTagName('span')[0]
+//console.log(txtVazio)
 
 todosElementos.map(el=>{
     el.addEventListener('click', ()=>{
@@ -24,12 +27,19 @@ btnCopiar.addEventListener('click', ()=>{
     if(importante.length==0){
         window.alert('Selecione um curso para prosseguir')
     }else{
-    right.innerHTML = ''    
-    //console.log(importante)
-
     importante.map(el=>{
         right.appendChild(el)
     })
     }
 })
 
+btnVoltar.addEventListener('click', ()=>{
+    if(right.children.length==0){
+        window.alert('A caixa da direita está vazia, portanto não é possível prosseguir.')
+    }else{
+    const importante = [...document.querySelectorAll('div.importante')]
+    
+    importante.map(el=>{
+        left.appendChild(el)
+    })
+}})
