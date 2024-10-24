@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: min(1rem, calc(.5rem + 1vw));
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    width: 50vw;
+    margin: auto;
+    
+}
+
+.formulario{
+    align-self: flex-start;
+    width: 300px;
+    border: 3px solid rgb(88, 88, 88);
+    margin-bottom: 5px;
+    background-color: rgb(204, 204, 204);
+}
+
+h1{
+    font-size: min(1.5rem, calc(1rem + 1vw));
+    padding: 10px 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#texto{
+    width: 70%;
+    cursor: text;
+}
+
+section{
+    width: 300px;
+    border: 3px solid rgb(88, 88, 88);
+    background-color: rgb(204, 204, 204);
+}
+
+.itens{
+    background-color: black;
+    color: white;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 10px 0vw;
+    text-align: center;
+    border: 3px solid rgb(88, 88, 88);
+    cursor: pointer;    
+}
+
+.itens:hover{
+    background-color: red;
+    font-weight: bolder;
+    border: 3px solid rgb(175, 0, 0);
+}
+
+.vazio{
+    text-align: center;
+}
