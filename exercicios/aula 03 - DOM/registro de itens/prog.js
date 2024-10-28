@@ -38,10 +38,10 @@ btn_remover.addEventListener('click',()=>{
         window.alert('Não há nenhum item selecionado!')
     }else{
     const msg_confirmacao = window.confirm('Clique em "OK" para remover o item!')
-    if(msg_confirmacao == true){
-    importante.map(el=>{
-        el.remove()
-    })}
+        if(msg_confirmacao == true){
+        importante.map(el=>{
+            el.remove()
+        })}
     }
     
     const novoItem = document.querySelectorAll('div.itens')
