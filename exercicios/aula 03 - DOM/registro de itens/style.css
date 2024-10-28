@@ -67,6 +67,29 @@ section{
     border: 3px solid rgb(175, 0, 0);
 }
 
+.remover{
+    background-color: rgb(1, 1, 77);
+    color: white;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 8px 0vw;
+    text-align: center;
+    border: 3px solid rgb(1, 1, 158);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.remover:hover{
+    background-color: rgb(2, 2, 170);
+    font-weight: bold;
+}
+.importante{
+    background-color: red !important;
+    font-weight: bolder !important;
+    border: 3px solid rgb(175, 0, 0) !important;
+}
+
 .vazio{
     text-align: center;
 }

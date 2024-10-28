@@ -1,39 +1,54 @@
 const texto = document.querySelector('input#texto')
 const btn_salvar = document.querySelector('input#salvar') 
+const btn_remover = document.querySelector('div.remover')
 const cx_conteudo = document.querySelector('.conteudo')
 const vazio = document.querySelector('.vazio')
-let arr = ['aaaa','bbb']
-
-
-/* 
-Para cada elemento adicionado, necesário vincular o onclick
-Ao clicar, vou remover o elemento
-*/
+const todosItens = []
 
 btn_salvar.addEventListener('click', ()=>{  
+
     if(texto.value==''){
-        window.alert('[ERRO] Valor não encontrado. Por favor, digite o item que deseja salvar!')
+        window.alert('Valor não encontrado!')
     }else{
-    //window.alert(texto.value)
+
+    /* todosItens.push(texto.value)
+    Colocar filtro para valor repetido.     
+    */
+       
     vazio.style.display = 'none'
-    arr.push(texto.value)       
+           
     const novoItem = document.createElement('div')
     novoItem.setAttribute('class','itens')
     novoItem.innerText = texto.value
-    cx_conteudo.appendChild(novoItem)
+    
+    cx_conteudo.insertBefore(novoItem, btn_remover )
     texto.value = '' 
-    
-    
-        /* arr.map(el=>{
-            el.addEventListener('click', ()=>{
-            console.log('teste')
-            })
-        }) */
-    
-    
+
+    novoItem.addEventListener('click',()=>{
+        novoItem.classList.toggle('importante')
+    })
+
     }
 })
 
+btn_remover.addEventListener('click',()=>{
+    const importante = [...document.querySelectorAll('div.importante')]
+    
+    if(importante.length == 0){
+        window.alert('Não há nenhum item selecionado!')
+    }else{
+    const msg_confirmacao = window.confirm('Clique em "OK" para remover o item!')
+    if(msg_confirmacao == true){
+    importante.map(el=>{
+        el.remove()
+    })}
+    }
+    
+    const novoItem = document.querySelectorAll('div.itens')
+    if(novoItem.length==0){
+    vazio.style.display='block'
+    } 
+})
 
 
 
