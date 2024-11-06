@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+
+body{
+    margin: 0px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+section{
+    display: inline-block;
+    background-color: silver;
+    margin: 0vh 2vw;
+    border: 5px solid black;
+    text-align: center;    
+}
+
+#esquerda{
+    padding: 3rem 1rem;
+    
+}
+
+#formItem{
+    margin: 0px;
+    padding: 0px;
+    height: 3vh;
+    
+}
+
+#centro{
+    padding: 3rem 3rem 2rem 3rem;
+    width: 25%;
+    
+    
+}
+
+#direita{
+    padding: 3rem 3rem 2rem 3rem;
+    width: 25%;   
+    
+}
+
+#botao{
+    font-size: 1em;
+    height: 3vh;
+    padding: 1em 1em;
+    text-align: center;
+    width: 100px;    
+    border-radius: 1rem;
+    background-color: rgb(1, 1, 104);
+    color: white;
+   
+}
+
+#botao:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+
+.cursos{
+    background-color: black;
+    color: white;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    border: 5px solid black;
+    margin-bottom: .5rem;
+    
+}
+
+.cursos:hover{
+    background-color: rgb(45, 45, 45);
+    cursor: pointer;
+    color: yellow;
+    font-weight: bold;
+}
+
+.importante{
+    color: white;
+    background-color: rgb(160, 2, 2) !important;
+    border: 5px solid rgb(217, 0, 0) !important;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    margin-bottom: .5rem;
+    
+}
+
+.txt{
+    font: normal 18pt arial;
+    
+}
