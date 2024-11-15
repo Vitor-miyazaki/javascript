@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando elementos</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    
 </head>
 <body>
+   
     <main>
-        <h1>Vamos contar</h1>
-        <section>
-            <div><label for="inicio">Inicio:</label><input type="number" name="inicio" id="inicio"></div>
-            <div><label for="fim">Fim:</label><input type="number" name="fim" id="fim"></div>
-            <div><label for="passo">Passo:</label><input type="number" name="passo" id="passo"></div>
-            <div><input type="button" value="Contar" id="btn_contar"></div>
-            <p class="txt">Aguardando dados....</p>
+        <div class="formulario">
+            <h1>Registre um item</h1>
+            <input type="text" name="texto" id="texto" maxlength="20"><input id="salvar" type="submit" value="Salvar">
+        </div>
+        <section class="conteudo">
+            <h1>Itens adicionados</h1>
+            <p class="vazio">Nenhum item adicionado</p>
+            <div class="remover">Remover</div>
+            <!-- <div class="itens">HTML</div>
+            <div class="itens">CSS</div>
+            <div class="itens">Cenoura</div> -->
         </section>
-        
     </main>
-        
+    
     <script src="treino.js"></script>
 </body>
 </html>
