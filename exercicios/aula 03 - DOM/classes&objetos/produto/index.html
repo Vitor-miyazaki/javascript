@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=delete" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,11 +21,52 @@
                         <option value="gordura">Gordura</option>
                     </select>
                 </label>
-                <label for="preço"><strong>Preço (R$):</strong> <input type="number" name="preço" id="preço"></label>
-                <input type="button" value="Registrar" id="botao">
+                <label for="unidade"><strong>Unidade:</strong> <input type="number" name="unidade" id="unidade" value="1"></label>
+                <label for="peso"><strong>Peso (kg):</strong> <input type="number" name="peso" id="peso" step="0.2" value="0"></label>
+                <label for="preço"><strong>Preço por unidade ou kg (R$):</strong> <input type="number" name="preço" id="preço"></label>
+                <input type="button" value="Registrar" id="botao">                
             </div>
+            
+            <h2>Produtos registrados</h2>
             <div class="resultado">
-                <h2>Produtos registrados</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Categoria</th>
+                            <th>Unidade</th>
+                            <th>Peso(Kg)</th>
+                            <th>Preço (R$)</th>
+                            <th>Remover</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody class="dados">
+                        <tr class="vazio" >
+                            <td colspan="6">Nenhum item registrado</td>
+                        </tr>
+                       <!--  <tr>
+                            <th>Pepino</th>
+                            <td>Proteina</td>
+                            <td>1</td>
+                            <td>s/v</td>
+                            <td>10</td>
+                            <td class="lixeira">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </td>
+                        </tr> -->
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Valor total (R$)</th>
+                            <th colspan="4" class="total">0,00</th>
+                            
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
         </section>
         

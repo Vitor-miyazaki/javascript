@@ -1,17 +1,22 @@
 @charset "UTF-8";
 
-section{
+body{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    padding: 10px 10px;
+    color: #094074;
+    margin: 0px;
+    padding: 0px;
 }
 
-.formularios{
-    background-color: white;
+section{
+    padding: 10px 10px;
+    
 }
 
 input{
     width: 110px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 select{
@@ -23,23 +28,67 @@ select{
     cursor: pointer;
 }
 
+#unidade, #peso, #preço{
+    width: 50px;
+}
+
 .resultado{
-    background-color: white;
+    margin: auto;
+    width: 55vw;
+    height: 64vh;
+    overflow: auto;
+    
     
 }
 
-.resultado > p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-indent: 20px;
+table{
+    border-collapse: collapse;
+    margin: auto;
 }
 
-.resultado > p > strong{
-    color: red;
+thead{
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+}
+
+th , td{
+    padding: 10px 15px;
+    border: 1px solid #094074;
+    
+}
+
+tbody{
+    background-color: #FFDD4A;
+    color: black;
+    text-align: center;
+}
+
+tbody > tr> th{
+    background-color: #FE9000;
+}
+
+.material-symbols-outlined{
+    cursor: pointer;
+    color: white;
+}
+.material-symbols-outlined:hover{
+    color: #FE9000;
+   
+}
+
+.lixeira{
+    background-color: #3C6997;
+}
+
+thead , tfoot{
+    background-color: #3C6997;
+    color: white;
+    
 }
 
 h2{ 
-    background-color: rgb(1, 1, 121);
+    background-color: #094074;
     color: white;
     text-align: center;
     padding: 10px 0px;
