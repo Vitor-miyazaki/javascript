@@ -3,7 +3,8 @@ const btn_registrar = document.querySelector('#botao')
 const resultado = document.querySelector('.resultado')
 const dados = document.querySelector('.dados')
 const vazio = document.querySelector('.vazio')
-const total = document.querySelector('.total')
+const tdTotal = document.querySelector('.total')
+const valores = []
 
 const Vazio=()=>{
     if(vazio.parentElement.children.length<=1){
@@ -13,10 +14,8 @@ const Vazio=()=>{
     }
 }
 
-/* const Total=(preço,unidade)=>{
-    const res = unidade*preço
-    total.innerHTML = res.toFixed(2)
-} */
+
+
 
 class Alimentos{
     constructor(nome,categoria,unidade,peso,preço){
@@ -68,6 +67,14 @@ class Alimentos{
         })
     
     }
+
+    Calculo(){
+        
+        const calc = this.unidade * this.preço
+        valores.push(calc)
+        const soma = valores.reduce((acum,el)=>acum+el)
+        tdTotal.innerHTML = `R$ ${soma.toFixed(2)}`
+    }
 }
 
 btn_registrar.addEventListener('click', ()=>{
@@ -89,6 +96,7 @@ btn_registrar.addEventListener('click', ()=>{
     }else{
         const novo = new Alimentos(nome,categoria,unidade,peso,preço)
         novo.InserindoItens()
+        novo.Calculo()
 
         Vazio()
         

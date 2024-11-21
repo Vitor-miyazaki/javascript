@@ -21,9 +21,9 @@
                         <option value="gordura">Gordura</option>
                     </select>
                 </label>
-                <label for="unidade"><strong>Unidade:</strong> <input type="number" name="unidade" id="unidade" value="1"></label>
-                <label for="peso"><strong>Peso (kg):</strong> <input type="number" name="peso" id="peso" step="0.2" value="0"></label>
-                <label for="preço"><strong>Preço por unidade ou kg (R$):</strong> <input type="number" name="preço" id="preço"></label>
+                <label for="unidade"><strong>Unidade:</strong> <input type="number" name="unidade" id="unidade" value="1" min="1"></label>
+                <label for="peso"><strong>Peso (kg):</strong> <input type="number" name="peso" id="peso" step="0.2" value="0" min="0"></label>
+                <label for="preço"><strong>Preço por unidade ou kg (R$):</strong> <input type="number" name="preço" id="preço" min="0"></label>
                 <input type="button" value="Registrar" id="botao">                
             </div>
             
@@ -61,8 +61,8 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>Valor total (R$)</th>
-                            <th colspan="4" class="total">0,00</th>
+                            <th>Valor total</th>
+                            <th colspan="4" class="total">R$ 0,00</th>
                             
                         </tr>
                     </tfoot>
