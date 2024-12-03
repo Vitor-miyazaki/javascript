@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div id="tipo">
+                Tipo:
+                <div><input type="radio" name="tipo" id="militar"> Militar</div>
+                <div><input type="radio" name="tipo" id="normal" > Normal</div>
+            </div>
+            <label for="nome">Nome: <input type="text" name="nome" id="nome" disabled></label>
+            <label for="portas">Portas: <input type="number" name="portas" id="portas" value="2" disabled min="1"></label>
+            <label for="cor">Cor: <input type="text" name="cor" id="cor" value="verde" disabled></label>
+            <label for="blindagem">Blindagem: 
+                <select name="blindagem" id="blindagem" disabled>
+                    <option value="fraca">Fraca</option>
+                    <option value="media">Média</option>
+                    <option value="forte">Forte</option>
+                </select>
+            </label>
+            <label for="municao">Munição: <input type="number" name="municao" id="municao" value="0" min="0" max="1000" disabled></label>        
+                
+            <input type="button" value="Adicionar" id="btn-adicionar">
+            <div id="resultados">
+                <div id="carro">
+                    <strong>Nome do carro:</strong> azul <br>
+                    <strong>Portas:</strong> 2 <br>
+                    <strong>Cor:</strong> Vermelho <br>
+                    <strong>Blindagem:</strong> não há <br>
+                    <strong>Munição:</strong> não há 
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
