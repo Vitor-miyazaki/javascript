@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#area{
+    background-color: rgb(76, 145, 76);
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 18pt;
+}
