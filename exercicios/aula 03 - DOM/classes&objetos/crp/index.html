@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            
+            <label for="nome">Nome: <input type="text" name="nome" id="nome"></label>
+            <label for="cpf">CPF: <input type="number" name="cpf" id="cpf" maxlength="11"></label>
+            <label for="inscricao">Inscrição: <input type="number" name="inscricao" id="inscricao"></label>            
+            <label for="curso">Curso: <input type="text" name="curso" id="curso"></label>
+            <label for="valorCorreto">Valor devido: <input type="number" name="valorCorreto" id="valorCorreto"></label>
+            <label for="tipo">tipo de desconto/campanha: <input type="text" name="tipo" id="tipo" disabled></label>
+            
+            <label for="valorErrado">Valor atual: <input type="number" name="valorErrado" id="valorErrado" disabled></label>
+            <label for="consultor">Consultor: <input type="text" name="consultor" id="consultor" disabled></label>
+            <label for="problema">Problema: <input type="text" name="problema" id="problema" disabled></label>
+     
+                
+            <input type="button" value="Adicionar" id="btn-adicionar">
+            <div id="resultados"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
