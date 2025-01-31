@@ -40,7 +40,7 @@ console.log('----')
 p2.apresentar()
 p3.apresentar() */
 
-/* Exercício 02 */
+/* Exercício 02 ---- HERANÇA */
 
 function Veiculo(marca,modelo,ano){ //Construtor Pai ---> para propriedades
     this.marca = marca
