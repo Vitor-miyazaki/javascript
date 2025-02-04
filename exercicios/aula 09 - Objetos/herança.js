@@ -13,7 +13,7 @@ class Aluno extends Pessoas{
     constructor(nome,idade,nota){
     /*  this.nome = nome        Retirado, pois ambas as subclasses, possuem as mesmas propriedades, portanto é 
         this.idade = idade      adicionado na classe pai  */
-        super(nome,idade)
+        super(nome,idade)  /* Super só será usado, "quando o filho precisa utilizar o construtor" para adicionar sua própria propriedade. */
         this.nota = nota
     }
     apresentarAluno(){
